@@ -12,24 +12,29 @@ It’s designed as a Jupyter notebook so you can explore the data, train models,
 └── README.md
 ```
 
-##🚀 How to Get Started
-#1.Clone this repo
+## 🚀 How to Get Started
 
+1. **Clone this repo**
+```bash
 git clone https://github.com/your-username/glucose-forecasting.git
 cd glucose-forecasting
+```
 
-#2.Install required libraries
+2. **Install required libraries**
 
-All dependencies are listed in requirements.txt.
-Install them with:
+   - All dependencies are listed in `requirements.txt`.
+   - Install them with:
+```bash
 pip install -r requirements.txt
+```
 
-#3.Unzip the dataset
+3. **Unzip the dataset**
 
-Inside the data/ folder there is a file dataset.zip.
-Before running the notebook, unzip it:
+   - Inside the `data/` folder there is a file `dataset.zip`.
+   - Before running the notebook, unzip it:
+```bash
 unzip data/dataset.zip -d data/
-After unzipping, the raw data will be ready in data/.
+```
 
 #4.Run the notebook
 
