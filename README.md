@@ -12,7 +12,7 @@ It’s designed as a Jupyter notebook so you can explore the data, train models,
 └── README.md
 ```
 
-#🚀 How to Get Started
+##🚀 How to Get Started
 #1.Clone this repo
 
 git clone https://github.com/your-username/glucose-forecasting.git
