@@ -8,7 +8,7 @@ It’s designed as a Jupyter notebook so you can explore the data, train models,
 ├── glucose_forecasting_models.ipynb  # Main notebook
 ├── data/
 │   └── dataset.zip                   # Dataset (zipped for storage)
-├── requirements.txt                  # List of dependencies
+├── Libraries.txt                  # List of dependencies
 └── README.md
 ```
 
@@ -22,10 +22,10 @@ cd glucose-forecasting
 
 2. **Install required libraries**
 
-   - All dependencies are listed in `requirements.txt`.
+   - All dependencies are listed in `Libraries.txt`.
    - Install them with:
 ```bash
-pip install -r requirements.txt
+pip install -r Libraries.txt
 ```
 
 3. **Unzip the dataset**
