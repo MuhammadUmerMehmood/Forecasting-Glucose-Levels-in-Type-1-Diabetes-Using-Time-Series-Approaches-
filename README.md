@@ -1,53 +1,114 @@
-# Glucose Level Forecasting
-This project uses deep learning models (LSTM, GRU, CNN) to predict glucose levels from Continuous Glucose Monitoring (CGM) data.
-It’s designed as a Jupyter notebook so you can explore the data, train models, and see results interactively.
+# 🩺 Blood Glucose Level Forecasting in Type 1 Diabetes
+### MSc Data Science — Final Year Project
 
-# 📂 Project Layout
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
+![Kaggle](https://img.shields.io/badge/Platform-Kaggle-20BEFF)
+![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+
+---
+
+## 📌 Project Overview
+The goal of this study is to employ deep learning time series models to predict blood glucose levels in individuals with Type 1 Diabetes (T1D). 
+By predicting glucose levels 30 minutes in advance, Continuous Glucose Monitor (CGM) data can assist patients and physicians in taking preventative measures against potentially harmful bouts of hypoglycemia and hyperglycemia.
+
+---
+
+## 🎯 Objectives
+Analyse 200 T1D patients' CGM data in an exploratory manner.
+Construct and assess three deep learning models: CNN, GRU, and LSTM
+MAE, RMSE, and R2 measures are used to compare model performance.
+Determine which short-term glucose predicting model is the most accurate.
+
+---
+
+## 📊 Dataset
+- **Source:** Clinical CGM dataset — 200 Type 1 Diabetes patients
+- **Total Readings:** 647,858 glucose readings
+- **Sampling Rate:** Every 5 minutes (continuous)
+- **Target Variable:** Blood glucose level (mg/dL)
+- **Features:** Demographics, clinical history, medications, comorbidities
+
+### Glucose Zone Distribution:
+| Zone | Range | Count | Percentage |
+|---|---|---|---|
+| 🔴 Hypoglycemia | < 70 mg/dL | 48,839 | 7.5% |
+| 🟢 Normal | 70–180 mg/dL | 333,033 | 51.4% |
+| 🟠 Hyperglycemia | > 180 mg/dL | 265,986 | 41.1% |
+
+---
+
+## 🏗️ Project Structure
 ```
-.
-├── glucose_forecasting_models.ipynb  # Main notebook
-├── data/
-│   └── dataset.zip                   # Dataset (zipped for storage)
-├── Libraries.txt                  # List of dependencies
-└── README.md
+📁 t1d-glucose-forecasting
+│
+├── 📓 notebook.ipynb        # Main Kaggle notebook
+├── 📄 README.md             # Project documentation
+│
+├── 🔷 Section 1: Imports & Configuration
+├── 🔷 Section 2: Data Loading
+├── 🔷 Section 3: Exploratory Data Analysis (EDA)
+├── 🔷 Section 4: Data Preprocessing
+├── 🔷 Section 5: Feature Engineering
+├── 🔷 Section 6: LSTM Model
+├── 🔷 Section 7: GRU Model
+├── 🔷 Section 8: CNN Model
+└── 🔷 Section 9: Model Comparison & Results
 ```
 
-## 🚀 How to Get Started
+---
 
-1. **Clone this repo**
-```bash
-git clone https://github.com/your-username/glucose-forecasting.git
-cd glucose-forecasting
-```
+## 🔬 Models Used
+| Model | Type | Why Used |
+|---|---|---|
+| **LSTM** | Recurrent Neural Network | Captures long-term temporal dependencies in glucose patterns |
+| **GRU** | Recurrent Neural Network | Faster, lighter alternative to LSTM with comparable accuracy |
+| **CNN** | Convolutional Neural Network | Extracts local temporal patterns from glucose sequences |
 
-2. **Install required libraries**
+---
 
-   - All dependencies are listed in `Libraries.txt`.
-   - Install them with:
-```bash
-pip install -r Libraries.txt
-```
+## 📈 Evaluation Metrics
+- **MAE** — Mean Absolute Error (mg/dL)
+- **RMSE** — Root Mean Squared Error (mg/dL)
+- **R²** — Coefficient of Determination
 
-3. **Unzip the dataset**
+---
 
-   - Inside the `data/` folder there is a file `dataset.zip`.
-   - Before running the notebook, unzip it:
-```bash
-unzip data/dataset.zip -d data/
-```
+## 🚀 Current Progress
+- [x] Environment setup & GPU configuration
+- [x] Data loading & datetime parsing
+- [x] Exploratory Data Analysis (EDA)
+- [ ] Data Preprocessing
+- [ ] Feature Engineering
+- [ ] LSTM Model
+- [ ] GRU Model
+- [ ] CNN Model
+- [ ] Model Comparison & Final Report
 
-4. **Run the notebook**
-```bash
-jupyter notebook glucose_forecasting_models.ipynb
-```
+---
 
-**📝 Notes**
-If you’re using Google Colab, upload the extracted data/ folder before running the notebook.
-The notebook includes model training, evaluation, and visualization steps.
+## 🛠️ Technologies Used
+- **Python 3.10**
+- **TensorFlow / Keras** — Deep learning models
+- **Pandas & NumPy** — Data manipulation
+- **Matplotlib & Seaborn** — Visualizations
+- **Scikit-learn** — Preprocessing & metrics
+- **Kaggle Notebooks** — GPU-accelerated training
 
-**🤖 Models You’ll Find Here**
-LSTM — learns long-term dependencies in glucose sequences.
-GRU — simpler and faster than LSTM but still strong for time series.
-CNN — captures short-term glucose spikes and rapid changes.
-Each model is compared so you can see which one works best for short-term glucose forecasting.
+---
 
+## 📚 References
+1. Author(s). (2024). Blood glucose level prediction using deep learning models in type 1 diabetes. *PMC National Library of Medicine*. https://pmc.ncbi.nlm.nih.gov/articles/PMC11423977/
+
+2. Jaloli, M., & Cescon, M. (2023). Long-term prediction of blood glucose levels in type 1 diabetes using a CNN-LSTM-based deep neural network. *Journal of Diabetes Science and Technology, 17*(6), 1590–1601. https://doi.org/10.1177/19322968221092785
+
+3. Li, K., Liu, C., Zhu, T., Herrero, P., & Georgiou, P. (2019). GluNet: A deep learning framework for accurate glucose forecasting. *IEEE Journal of Biomedical and Health Informatics, 24*(2), 414–423. https://doi.org/10.1109/JBHI.2019.2931842
+
+4. Anonymous. (2025). Blood glucose level prediction in type 1 diabetes using machine learning. *arXiv*. https://arxiv.org/html/2502.00065v1
+
+---
+
+## 👤 Author
+**Muhammad Umer Mehmood**
+**23102319**
+Final Year Project — 2025/2026
