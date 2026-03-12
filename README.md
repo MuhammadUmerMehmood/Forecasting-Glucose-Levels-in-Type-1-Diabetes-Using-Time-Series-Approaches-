@@ -74,16 +74,41 @@ Determine which short-term glucose predicting model is the most accurate.
 
 ---
 
-## 🚀 Current Progress
+## ✅ Current Progress
 - [x] Environment setup & GPU configuration
 - [x] Data loading & datetime parsing
 - [x] Exploratory Data Analysis (EDA)
-- [ ] Data Preprocessing
-- [ ] Feature Engineering
-- [ ] LSTM Model
-- [ ] GRU Model
-- [ ] CNN Model
-- [ ] Model Comparison & Final Report
+  - [x] Glucose distribution plot
+  - [x] Hypo/Normal/Hyper pie chart
+  - [x] Patient time series visualization
+  - [x] Per patient statistics
+     
+  ## 🔮 Future Plan
+
+### Phase 1 — Data Preparation
+- [ ] Handle missing values & outliers
+- [ ] Resample time series to fixed 5 min intervals
+- [ ] Normalize glucose values using MinMaxScaler
+- [ ] Create sequences for time series modeling
+
+### Phase 2 — Feature Engineering
+- [ ] Add lag features
+- [ ] Add rolling mean & standard deviation
+- [ ] Add time of day features (morning, night etc.)
+
+### Phase 3 — Model Development
+- [ ] Build & train LSTM model
+- [ ] Build & train GRU model
+- [ ] Build & train CNN model
+
+### Phase 4 — Evaluation & Comparison
+- [ ] Evaluate all models using MAE, RMSE and R²
+- [ ] Plot predicted vs actual glucose values
+- [ ] Compare all 3 models in a final results table
+
+### Phase 5 — Final Report
+- [ ] Write up findings and conclusions
+- [ ] Submit final year project report
 
 ---
 
