@@ -83,7 +83,9 @@ Determine which short-term glucose predicting model is the most accurate.
   - [x] Patient time series visualization
   - [x] Per patient statistics
      
-  ## 🔮 Future Plan
+---
+
+## 🔮 Future Plan
 
 ### Phase 1 — Data Preparation
 - [ ] Handle missing values & outliers
