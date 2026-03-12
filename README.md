@@ -87,19 +87,15 @@ Determine which short-term glucose predicting model is the most accurate.
 
 ## 🔮 Future Plan
 
-### Phase 1 — Data Preparation
+Data Preparation
 
+Feature Engineering
 
-### Phase 2 — Feature Engineering
+Model Development
 
+Evaluation & Comparison
 
-### Phase 3 — Model Development
-
-
-### Phase 4 — Evaluation & Comparison
-
-
-### Phase 5 — Final Report
+Final Report
 
 
 ---
