@@ -72,7 +72,7 @@ Determine which short-term glucose predicting model is the most accurate.
 - **RMSE** — Root Mean Squared Error (mg/dL)
 - **R²** — Coefficient of Determination
 
-
+---
 
 ## 🛠️ Technologies Used
 - **Python 3.10**
