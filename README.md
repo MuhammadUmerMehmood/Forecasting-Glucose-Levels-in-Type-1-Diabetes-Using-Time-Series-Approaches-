@@ -110,6 +110,15 @@ Determine which short-term glucose predicting model is the most accurate.
 
 ---
 
+## 🔮 Future Plan
+
+- [ ] Hyperparameter Tuning
+- [ ] Hybrid Model Exploration
+- [ ] Real-time CGM Integration
+- [ ] Final Report & Viva
+
+---
+
 ## 📚 References
 1. Author(s). (2024). Blood glucose level prediction using deep learning models in type 1 diabetes. *PMC National Library of Medicine*. https://pmc.ncbi.nlm.nih.gov/articles/PMC11423977/
 
