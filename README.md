@@ -88,6 +88,18 @@ Determine which short-term glucose predicting model is the most accurate.
 
 ---
 
+## 🏆 Model Results
+
+| Model | MAE | RMSE | R² |
+|---|---|---|---|
+| LSTM | 15.4421 | 23.1904 | 0.9263 |
+| GRU | 20.3986 | 28.0513 | 0.8922 |
+| **CNN** | **14.3097** | **21.6268** | **0.9359** |
+
+🏆 **Best Model: CNN** — Lowest MAE and RMSE, Highest R²
+
+---
+
 ## 🛠️ Technologies Used
 - **Python 3.10**
 - **TensorFlow / Keras** — Deep learning models
