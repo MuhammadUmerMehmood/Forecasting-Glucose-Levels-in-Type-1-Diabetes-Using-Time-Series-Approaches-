@@ -55,6 +55,20 @@ Determine which short-term glucose predicting model is the most accurate.
 ├── 🔷 Section 8: CNN Model
 └── 🔷 Section 9: Model Comparison & Results
 ```
+## ✅ Current Progress
+
+- [x] Environment Setup & GPU Configuration
+- [x] Data Loading & Datetime Parsing
+- [x] Exploratory Data Analysis (EDA)
+- [x] Outlier Handling
+- [x] Normalisation
+- [x] Feature Engineering (Lag Features & Rolling Statistics)
+- [x] Sequence Creation
+- [x] Train / Validation / Test Split
+- [x] LSTM Model — Built, Trained & Evaluated
+- [x] GRU Model — Built, Trained & Evaluated
+- [x] CNN Model — Built, Trained & Evaluated
+- [x] Model Comparison & Final Results
 
 ---
 
