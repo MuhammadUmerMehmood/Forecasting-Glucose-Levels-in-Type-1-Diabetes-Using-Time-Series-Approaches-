@@ -1,4 +1,4 @@
-# 🩺 Forecasting Glucose Levels in Type 1 Diabetes Using Machine Learning
+#  Forecasting Glucose Levels in Type 1 Diabetes Using Machine Learning
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow)](https://www.tensorflow.org/)
@@ -12,7 +12,7 @@ A deep learning project that forecasts blood glucose levels **30 minutes ahead**
 
 ---
 
-## 📊 Results at a Glance
+## Results at a Glance
 
 | Model | MAE (mg/dL) ↓ | RMSE (mg/dL) ↓ | R² ↑ |
 |-------|:---:|:---:|:---:|
@@ -24,7 +24,7 @@ All three models achieve **R² > 0.94**, demonstrating that deep learning effect
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 ├── gcm-using-machine-learning-models.ipynb   # Main Kaggle notebook
@@ -35,7 +35,7 @@ All three models achieve **R² > 0.94**, demonstrating that deep learning effect
 
 ---
 
-## 🗂️ Dataset
+##  Dataset
 
 **Source:** [GlucoBench](https://github.com/IrinaStatsLab/GlucoBench) — longitudinal CGM records
 
@@ -49,7 +49,7 @@ All three models achieve **R² > 0.94**, demonstrating that deep learning effect
 
 ---
 
-## 🏗️ Project Pipeline
+##  Project Pipeline
 
 ```
 Raw CGM Data
@@ -84,7 +84,7 @@ Raw CGM Data
 
 ---
 
-## 🧠 Model Architecture (LSTM — Best Saved Model)
+##  Model Architecture (LSTM — Best Saved Model)
 
 ```
 Input: (None, 12, 12)   →   12 timesteps × 12 features (1 hour of history)
@@ -118,7 +118,7 @@ Output: (None, 6)   →   6 glucose values = next 30 minutes
 
 ---
 
-## 🚀 Quick Start on Kaggle
+##  Quick Start on Kaggle
 
 ### 1. Upload the dataset
 Add `weinstock.csv` as a Kaggle dataset and note the dataset slug.
@@ -150,7 +150,7 @@ pip install tensorflow numpy pandas matplotlib seaborn scikit-learn statsmodels
 
 ---
 
-## 📈 Key Findings
+##  Key Findings
 
 - **GRU is the best model** — its simpler gating mechanism proves sufficient for this task while being faster to train than LSTM.
 - **All models achieve R² > 0.94** — deep learning reliably captures the non-linear temporal dynamics of CGM data.
@@ -159,7 +159,7 @@ pip install tensorflow numpy pandas matplotlib seaborn scikit-learn statsmodels
 
 ---
 
-## ⚠️ Limitations
+##  Limitations
 
 - Placeholder dates (year 1900) in the dataset limit reliability of date-based features.
 - A global model may not optimally serve all patients — personalised fine-tuning could improve results.
@@ -167,7 +167,7 @@ pip install tensorflow numpy pandas matplotlib seaborn scikit-learn statsmodels
 
 ---
 
-## 🔭 Future Work
+##  Future Work
 
 - Explore hybrid architectures (CNN-GRU) and Transformer-based models with attention.
 - Develop patient-specific models using transfer learning.
@@ -176,12 +176,12 @@ pip install tensorflow numpy pandas matplotlib seaborn scikit-learn statsmodels
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 `Python` · `TensorFlow / Keras` · `NumPy` · `Pandas` · `Scikit-learn` · `Matplotlib` · `Seaborn` · `Statsmodels`
 
 ---
 
-## 📄 License
+##  License
 
 This project is for academic purposes. Dataset credit: [GlucoBench](https://github.com/IrinaStatsLab/GlucoBench).
