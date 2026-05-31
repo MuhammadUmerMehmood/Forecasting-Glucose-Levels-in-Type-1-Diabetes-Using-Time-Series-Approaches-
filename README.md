@@ -1,5 +1,3 @@
----
-
 # Forecasting Glucose Levels in Type 1 Diabetes Using Machine Learning
 
 **Student:** Muhammad Umer Mehmood | **Student ID:** 23102319 | **Supervisor:** Ralf Napiwotzki
